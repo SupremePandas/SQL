@@ -31,7 +31,7 @@ CREATE TABLE `Privatkunde`(
 `Vorname` varchar(45) NOT NULL,
 `Geburtsdatum` date NOT NULL
 );
-
+-- Alle daten hier drin gehören zur keiner Person alles nur als TEST
 
 INSERT INTO `Projekt` (`PNr`, `Bezeichnung`,`KID`) VALUES
 (1, 'Zeiterfassung AixDB GmbH', 1),
