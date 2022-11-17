@@ -9,7 +9,7 @@ CREATE TABLE `Projekt`(
 `Star` varchar(45) NOT NULL,
 `Ende` varchar(45) NOT NULL,
 `KID` int(11) NOT NULL
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 CREATE TABLE `Kunde`(
 `KID` int(11) NOT NULL,
 `Postleitzahl` int(5) NOT NULL,
@@ -18,19 +18,19 @@ CREATE TABLE `Kunde`(
 `Telefon` varchar(45) NOT NULL,
 `Email` varchar(45) NOT NULL,
 `Kundenart` varchar(45) NOT NULL
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 CREATE TABLE `Geschaeftskunde`(
 `KID` int(11) NOT NULL,
 `Firmenname` varchar(45) NOT NULL,
 `URL` varchar(45) NOT NULL,
 `Ansprechpartner` varchar(45) NOT NULL
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 CREATE TABLE `Privatkunde`(
 `KID` int(11) NOT NULL,
 `Name` varchar(45) NOT NULL,
 `Vorname` varchar(45) NOT NULL,
 `Geburtsdatum` date NOT NULL
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 -- Alle daten hier drin gehören zur keiner Person alles nur als TEST
 
 INSERT INTO `Projekt` (`PNr`, `Bezeichnung`,`KID`) VALUES
